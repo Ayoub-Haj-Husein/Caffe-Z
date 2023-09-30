@@ -13,5 +13,14 @@ let drinkStatus = prompt("Do you want to drink a hot or cold drink?");
 let drinkName = prompt("What drink do you want?");
 alert("Your drink is being prepared");
 console.log(
-  "Hello" + " " + personName + "," + "your" + " " + drinkName + " " + "is ready"
+  "Hello" +
+    " " +
+    personName +
+    "," +
+    " " +
+    "your" +
+    " " +
+    drinkName +
+    " " +
+    "is ready"
 );
