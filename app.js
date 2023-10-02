@@ -1,26 +1,23 @@
-let personName = prompt("Please enter your name");
-let personGender = prompt("Please enter your gender");
+// let username = prompt("Please enter your name");
+// let gender = prompt("Please enter your gender");
 
-if (personGender === "male") {
-  alert("Hello!" + " " + "Mr." + personName);
-} else if (personGender === "female") {
-  alert("Hello!" + " " + "Ms." + personName);
-} else {
-  alert("Hello!" + " " + personName);
-}
+// while (gender !== "male" && gender !== "female") {
+//   gender = prompt("Please enter a valid gender (male or female)");
+// }
 
-let drinkStatus = prompt("Do you want to drink a hot or cold drink?");
-let drinkName = prompt("What drink do you want?");
-alert("Your drink is being prepared");
-console.log(
-  "Hello" +
-    " " +
-    personName +
-    "," +
-    " " +
-    "your" +
-    " " +
-    drinkName +
-    " " +
-    "is ready"
-);
+// if (gender === "male") {
+//   alert(`Hello, Mr. ${username}`);
+// } else if (gender === "female") {
+//   alert(`Hello, Ms. ${username}`);
+// }
+
+// let typeOfDrink = prompt("Do you want to drink a hot or cold drink?");
+// let drinkName = prompt("What drink do you want?");
+// alert("Your drink is being prepared");
+// console.log(`Hello ${username}, your ${drinkName} is ready`);
+
+// let arrayInformation = [username, gender, typeOfDrink, drinkName];
+
+// for (let i = 0; i < arrayInformation.length; i++) {
+//   console.log(arrayInformation[i]);
+// }

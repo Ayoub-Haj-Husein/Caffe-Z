@@ -1,4 +1,28 @@
 h1 {
-  padding: 20px;
-  color: blue;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+h1:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 5px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #ff0000;
 }
