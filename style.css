@@ -19,6 +19,7 @@ li {
   color: #333;
   margin: 5px 5px;
   transition: background-color 0.3s;
+  list-style-type: none;
 }
 
 li:hover {
