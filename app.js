@@ -26,6 +26,47 @@
 //   console.log(arrayInformation[i]);
 // }
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const form = document.getElementById("userInfo");
+//   const container = document.getElementById("container");
+
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     const name = document.getElementById("name").value;
+//     const gender = document.getElementById("gender").value;
+//     const drinkType = document.getElementById("drinkType").value;
+//     const drinkName = document.getElementById("drinkName").value;
+
+//     const userDataDiv = document.createElement("div");
+
+//     const userUl = document.createElement("ul");
+
+//     const nameLi = document.createElement("li");
+//     nameLi.textContent = `Name: ${name}`;
+
+//     const genderLi = document.createElement("li");
+//     genderLi.textContent = `Gender: ${gender}`;
+
+//     const drinkTypeLi = document.createElement("li");
+//     drinkTypeLi.textContent = `Type Drink: ${drinkType}`;
+
+//     const drinkNameLi = document.createElement("li");
+//     drinkNameLi.textContent = `Drink Name: ${drinkName}`;
+
+//     userUl.appendChild(nameLi);
+//     userUl.appendChild(genderLi);
+//     userUl.appendChild(drinkTypeLi);
+//     userUl.appendChild(drinkNameLi);
+
+//     userDataDiv.appendChild(userUl);
+
+//     form.reset();
+
+//     container.appendChild(userDataDiv);
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("userInfo");
   const container = document.getElementById("container");
@@ -35,7 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const name = document.getElementById("name").value;
     const gender = document.getElementById("gender").value;
-    const drinkType = document.getElementById("drinkType").value;
+
+    var temperature = [];
+    var temperatureCheckboxes = document.getElementsByName("temperature");
+
+    for (var i = 0; i < temperatureCheckboxes.length; i++) {
+      if (temperatureCheckboxes[i].checked) {
+        temperature.push(temperatureCheckboxes[i].value);
+      }
+    }
+
     const drinkName = document.getElementById("drinkName").value;
 
     const userDataDiv = document.createElement("div");
@@ -49,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     genderLi.textContent = `Gender: ${gender}`;
 
     const drinkTypeLi = document.createElement("li");
-    drinkTypeLi.textContent = `Type Drink: ${drinkType}`;
+    drinkTypeLi.textContent = `Type Drink: ${temperature}`;
 
     const drinkNameLi = document.createElement("li");
     drinkNameLi.textContent = `Drink Name: ${drinkName}`;
